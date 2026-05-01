@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Jantz TV</title>
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="app">
+
+		<header class="top-bar">
+			<div>
+				<h1>Jantz TV</h1>
+				<p>Relax and watch some videos buddy!</p>
+			</div>
+
+			<div class="channel-display">
+				<span id="channelNumber">CH 01</span>
+			</div>
+		</header>
+
+		<main class="tv-area">
+
+			<button class="nav-btn left-btn" id="prevChannel">◀</button>
+
+			<section class="channel-card">
+
+				<div class="channel-header">
+					<h2 id="channelName">The Daily Show</h2>
+					<p id="channelTagline">Latest videos loaded into the retro tube.</p>
+				</div>
+
+				<div class="tv-frame">
+					<div class="tv-screen">
+						<iframe id="videoPlayer" src="" title="Jantz TV YouTube Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+						</iframe>
+					</div>
+
+					<div class="tv-controls">
+						<div class="power-light"></div>
+						<span>Relax Guy</span>
+						<div class="knob"></div>
+					</div>
+				</div>
+
+				<div class="video-section">
+					<h3>Recent Videos</h3>
+					<div class="video-list" id="recentVideos"></div>
+				</div>
+
+				<div class="favorite-section">
+					<h3>Favorites</h3>
+					<div class="favorites-list" id="favoritesList"></div>
+				</div>
+
+			</section>
+
+			<button class="nav-btn right-btn" id="nextChannel">▶</button>
+
+		</main>
+
+		<footer class="bottom-bar">
+			<button id="refreshBtn">Refresh Channel</button>
+			<button id="openYouTubeBtn">Open on YouTube</button>
+		</footer>
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
